@@ -2,6 +2,7 @@
 html(lang='en')
   head
     meta(charset='utf-8')
+    title = locals.article ? article.title + ' — ' : ''
     title #{title} pancake
     meta(name='description', content='pancake')
     meta(name='author', content='Joseph Chiocchi')
