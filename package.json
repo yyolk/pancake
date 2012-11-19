@@ -11,7 +11,8 @@
     "url": "git://github.com/yyolk/pancake.git"
   },
   "engines": {
-    "node": ">= 0.8.0"
+    "node": ">= 0.8.x",
+    "npm": "1.1.x"
   },
   "scripts": {
     "start": "node server.js"
