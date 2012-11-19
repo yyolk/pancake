@@ -75,3 +75,14 @@
 // ==|== End print-media ====================================================
 
 
+body { padding: 40px; }
+
+.article {
+  a { float:left;}
+  span { float:right;}
+
+}
+#morelink {
+  clear:both;
+  display:block;
+}
