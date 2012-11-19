@@ -3,8 +3,9 @@
   "author": "Joseph YOLK Chiocchi <joe@yolk.cc> (http://yolk.cc)",
   "name": "pancake",
   "description": "Git repo for pancake",
-  "version": "0.0.0",
+  "version": "0.0.0-2",
   "homepage": "http://yolk.cc",
+  "subdomain": "pancake",
   "repository": {
     "type": "git",
     "url": "git://github.com/yyolk/pancake.git"
@@ -13,7 +14,7 @@
     "node": ">= 0.8.0"
   },
   "scripts": {
-    "start": "node server"
+    "start": "node server.js"
   },
   "dependencies": {
     "debug": "*",
@@ -31,4 +32,3 @@
     "mime": "~1.2.7"
   }
 }
-
