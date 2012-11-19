@@ -77,11 +77,13 @@
 
 body { padding: 40px; }
 
-.article {
+.work, .article {
   a { float:left;}
   span { float:right;}
 
+  p { clear:left;}
 }
+.clear{ clear:both;}
 #morelink {
   clear:both;
   display:block;

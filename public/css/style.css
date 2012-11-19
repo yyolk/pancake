@@ -582,15 +582,24 @@ body {
 }
 
 /* line 81, ../../sass/style.scss */
-.article a {
+.work a, .article a {
   float: left;
 }
 /* line 82, ../../sass/style.scss */
-.article span {
+.work span, .article span {
   float: right;
 }
+/* line 84, ../../sass/style.scss */
+.work p, .article p {
+  clear: left;
+}
 
-/* line 85, ../../sass/style.scss */
+/* line 86, ../../sass/style.scss */
+.clear {
+  clear: both;
+}
+
+/* line 87, ../../sass/style.scss */
 #morelink {
   clear: both;
   display: block;
