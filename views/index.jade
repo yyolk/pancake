@@ -14,7 +14,7 @@
       h4
         a(href=article.name + '/')= article.title
         date = article.date
-        span(title=strftime('%B %d, %Y %H:%M UTC', date))= strftime('%Y.%m.%d', date)
+        span(title=strftime('%Y%m%d-%I%M%p', date))= strftime('%Y.%m.%d', date)
       | !{article.desc}
   a(href='articles') older...
 
