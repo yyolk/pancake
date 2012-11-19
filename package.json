@@ -1,0 +1,34 @@
+{
+  "private": true,
+  "author": "Joseph YOLK Chiocchi <joe@yolk.cc> (http://yolk.cc)",
+  "name": "pancake",
+  "description": "Git repo for pancake",
+  "version": "0.0.0",
+  "homepage": "http://yolk.cc",
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/yyolk/pancake.git"
+  },
+  "engines": {
+    "node": ">= 0.8.0"
+  },
+  "scripts": {
+    "start": "node server"
+  },
+  "dependencies": {
+    "debug": "*",
+    "express": "3",
+    "ffi": "1",
+    "gravatar": "1",
+    "highlight.js": "7",
+    "jade": "0",
+    "lru-cache": "~2.1.0",
+    "marked": "0",
+    "ref": "0",
+    "ref-struct": "0",
+    "ref-array": "0",
+    "strftime": "0",
+    "mime": "~1.2.7"
+  }
+}
+
