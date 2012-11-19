@@ -1,5 +1,5 @@
 .articles
-  h3 recent works 
+  h3 recent articles 
   each article in articles.slice(0, 3)
     .article
       h4
@@ -8,4 +8,3 @@
         span(title=strftime('%B %d, %Y %H:%M UTC', date))= strftime('%Y.%m.%d', date)
       | !{article.desc}
   a(href='articles') older...
-

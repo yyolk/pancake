@@ -83,6 +83,7 @@ app.get('*', require('./lib/root-tree'));
 // `req.article_names` is used by every request
 app.get('*', require('./lib/article-names'));
 
+app.get('*', require('./lib/work-names'));
 // by now `req.root_tree` is a "git_tree" instance to the resolved SHA
 app.get('/', require('./lib/homepage'));
 app.get('/articles', require('./lib/articles'));
@@ -93,6 +94,11 @@ app.get('*', require('./lib/article-redirect'));
 
 // attempt to render an article if this a request for one
 app.get('*', require('./lib/article'));
+
+
+app.get('/works', require('./lib/works'));
+app.get('*', require('./lib/work-redirect'));
+app.get('*', require('./lib/work'));
 
 // finally attempt to serve static files from the public/ dir
 app.get('*', require('./lib/static'));
