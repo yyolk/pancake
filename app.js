@@ -21,7 +21,7 @@ var app = module.exports = express();
  *   - Don't serve from "fs", lookup HEAD instead and use that SHA (cache)
  */
 
-var prod = app.settings.prod = /^production$/i.test(app.settings.env);
+var prod = app.settings.prod; // = /^production$/i.test(app.settings.env);
 debug('running in %j mode (prod: %s)', app.settings.env, prod);
 
 /**
