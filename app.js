@@ -1,5 +1,7 @@
-//deps
-//
+
+/**
+ * Module dependencies.
+ */
 
 var ref = require('ref');
 var path = require('path');
@@ -8,9 +10,9 @@ var express = require('express');
 var GitError = require('./lib/git-error');
 var debug = require('debug')('pancake');
 
-
-// app
-//
+/**
+ * The app.
+ */
 
 var app = module.exports = express();
 
@@ -94,3 +96,4 @@ app.get('*', require('./lib/article'));
 
 // finally attempt to serve static files from the public/ dir
 app.get('*', require('./lib/static'));
+
