@@ -5,9 +5,9 @@
 
 var ref = require('ref');
 var path = require('path');
-var git = require('./lib/git');
+//var git = require('./lib/git');
 var express = require('express');
-var GitError = require('./lib/git-error');
+//var GitError = require('./lib/git-error');
 var debug = require('debug')('pancake');
 
 /**
@@ -28,32 +28,32 @@ debug('running in %j mode (prod: %s)', app.settings.env, prod);
  * Get the libgit2 version.
  */
 
-app.settings.version = (function () {
-  var major = ref.alloc('int');
-  var minor = ref.alloc('int');
-  var patch = ref.alloc('int');
-  git.git_libgit2_version(major, minor, patch);
-  return [ major.deref(), minor.deref(), patch.deref() ].join('.');
-})();
+// app.settings.version = (function () {
+//   var major = ref.alloc('int');
+//   var minor = ref.alloc('int');
+//   var patch = ref.alloc('int');
+//   //git.git_libgit2_version(major, minor, patch);
+//   return [ major.deref(), minor.deref(), patch.deref() ].join('.');
+// })();
 
 /**
  * The repo to use.
  */
 
 var repo_path = app.settings.repo_path = __dirname;
-var git_path = app.settings.git_path = repo_path + '/.git';
+//var git_path = app.settings.git_path = repo_path + '/.git';
 
 /**
  * Load the the "git_repository" instance for this repo.
  */
 
-var repo = ref.alloc(ref.refType(git.git_repository));
-debug('creating "git_repository" instance for repo', git_path);
-var err = git.git_repository_open(repo, git_path);
-if (err !== 0) throw new GitError('git_repository_open', err);
-debug('successfully create "git_repository" instance');
-repo = app.settings.repo = repo.deref();
-var bare = app.settings.bare = git.git_repository_is_bare(repo);
+//var repo = ref.alloc(ref.refType(git.git_repository));
+//debug('creating "git_repository" instance for repo', git_path);
+//var err = git.git_repository_open(repo, git_path);
+//if (err !== 0) throw new GitError('git_repository_open', err);
+//debug('successfully create "git_repository" instance');
+//repo = app.settings.repo = repo.deref();
+//var bare = app.settings.bare = git.git_repository_is_bare(repo);
 
 
 /**
