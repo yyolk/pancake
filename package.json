@@ -6,6 +6,10 @@
   "version": "0.0.0-10",
   "homepage": "http://yolk.cc",
   "subdomain": "pancake",
+  "domains": [
+    "yolk.cc",
+    "www.yolk.cc"
+  ],
   "repository": {
     "type": "git",
     "url": "git://github.com/yyolk/pancake.git"
