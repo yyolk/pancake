@@ -1,5 +1,8 @@
-.work-title
-  h1= work.title
+.work
+  h1
+    a.backhome(href="/")
+      span.backarrow ⤺
+      span.title!=work.title
   strong
     | Published: 
     date = work.date
