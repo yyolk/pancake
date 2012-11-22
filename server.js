@@ -4,17 +4,13 @@ var http = require('http')
   , Stack = require('stack')
   , Creationix = require('creationix')
   , port = parseInt(process.env.PANCAKE_IO_PORT, 10) || 3000;
-  //, app = require('./app')
+//  , app = require('./app');
 
-  // process title
-  //
+// process title
+//
 
 process.title = 'pancake';
 
-// create the HTTP server
-//
-
-//var server = http.createServer(app);
 
 
 // create stack server
@@ -23,6 +19,11 @@ http.createServer(Stack(
   Creationix.log(),
   require('wheat')(__dirname)
   )).listen(3000);
+
+// create the HTTP server
+//
+
+//var server = http.createServer(app);
 
 // Listen.
 //

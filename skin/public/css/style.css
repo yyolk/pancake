@@ -582,7 +582,7 @@ body {
 }
 
 /* line 81, ../../../sass/style.scss */
-.article span {
+.article span.pdate {
   float: right;
 }
 /* line 82, ../../../sass/style.scss */
@@ -612,20 +612,47 @@ body {
   background-color: white;
 }
 /* line 99, ../../../sass/style.scss */
+.article a.backhome {
+  margin-left: -32px;
+}
+/* line 101, ../../../sass/style.scss */
+.article a.backhome span.backarrow {
+  display: -moz-inline-stack;
+  display: inline-block;
+  vertical-align: middle;
+  *vertical-align: auto;
+  zoom: 1;
+  *display: inline;
+  position: relative;
+  visibility: hidden;
+}
+/* line 106, ../../../sass/style.scss */
+.article a.backhome:hover span.backarrow {
+  visibility: visible;
+}
+/* line 110, ../../../sass/style.scss */
+.article a.backhome:active span.backarrow {
+  color: black;
+}
+/* line 113, ../../../sass/style.scss */
+.article a.backhome:active span.title {
+  color: red;
+}
+/* line 118, ../../../sass/style.scss */
 .article p {
   clear: left;
 }
 
-/* line 101, ../../../sass/style.scss */
+/* line 120, ../../../sass/style.scss */
 .clear {
   clear: both;
 }
 
-/* line 102, ../../../sass/style.scss */
+/* line 121, ../../../sass/style.scss */
 a#morelink {
   clear: both;
 }
-/* line 103, ../../../sass/style.scss */
+/* line 122, ../../../sass/style.scss */
 a#morelink:visited {
   color: #0000cc;
 }

@@ -78,7 +78,7 @@
 body { padding: 40px; }
 
 .article {
-  span { float:right;}
+  span.pdate { float:right;}
   a {
     @include inline-block;
     text-decoration:none;
@@ -94,6 +94,25 @@ body { padding: 40px; }
       background-color: red;
       color:white;
       text-decoration:none;
+    }
+  }
+  a.backhome{
+    margin-left:-32px;
+    span.backarrow{
+      @include inline-block;
+      position:relative;
+      visibility:hidden;
+    }
+    &:hover span.backarrow{
+      visibility:visible;
+    }
+    &:active{
+      span.backarrow{
+        color:black;
+      }
+      span.title{
+        color:red;
+      }
     }
   }
   p { clear:left;}
