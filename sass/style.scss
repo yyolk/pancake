@@ -73,17 +73,35 @@
 // ==|== print-media ========================================================
 @import "h5bp/h5bp-css-print-after.inc";
 // ==|== End print-media ====================================================
-
+@import "compass/css3";
 
 body { padding: 40px; }
 
-.work, .article {
+.article {
   span { float:right;}
-
+  a {
+    @include inline-block;
+    text-decoration:none;
+    padding:4px;
+    &:visited{
+      color:blue;
+    }
+    &:hover{
+      &:active{
+        color:red;
+        background-color:white;
+      }
+      background-color: red;
+      color:white;
+      text-decoration:none;
+    }
+  }
   p { clear:left;}
 }
 .clear{ clear:both;}
-#morelink {
+a#morelink {
+  &:visited{
+    color: #0000cc;
+  }
   clear:both;
-  display:block;
 }

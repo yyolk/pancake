@@ -1,0 +1,6 @@
+#main
+  .article
+    %h1
+      %a{href: "/" + article.name}&= article.title
+    = markdownEncode(article.markdown)
+    %hr{class: "clear"}
