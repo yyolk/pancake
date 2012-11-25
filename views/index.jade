@@ -12,7 +12,7 @@ a(class='morelink', href='works') older...
 
 .articles
   h3 recent articles
-  each article in articles
+  each article in articles.slice(0, 3)
     .article
       h4
         a(href='article/' + article.name + '/')= article.title
