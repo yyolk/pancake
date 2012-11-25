@@ -76,7 +76,10 @@
 @import "compass/css3";
 
 body { padding: 40px; }
-
+.works, .articles{
+  padding:4px;
+  border: 1px solid #444;
+}
 .work, .article {
   span.pdate { float:right;}
   a {
@@ -118,7 +121,7 @@ body { padding: 40px; }
   p { clear:left;}
 }
 .clear{ clear:both;}
-a#morelink {
+a.morelink {
   &:visited{
     color: #0000cc;
   }

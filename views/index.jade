@@ -8,10 +8,7 @@
         span(title=strftime('%B %d, %Y %H:%M UTC', date), class="pdate")= strftime('%Y.%m.%d', date)
       | !{work.desc}
     hr(class='clear')
-a(id='morelink', href='works') older...
-
-
-hr(class='clear')
+a(class='morelink', href='works') older...
 
 .articles
   h3 recent articles
@@ -20,4 +17,8 @@ hr(class='clear')
       h4
         a(href='article/' + article.name + '/')= article.title
         date = article.date
-        !{article.desc}
+        span(title=strftime('%B %d, %Y %H:%M UTC', date), class='pdate')
+          =strftime('%Y.%m.%d',date)
+      | !{article.desc}
+      hr(class='clear')
+a(class='morelink', href='articles') older...
