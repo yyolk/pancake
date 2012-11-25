@@ -581,12 +581,6 @@ body {
   padding: 40px;
 }
 
-/* line 79, ../../sass/style.scss */
-.works, .articles {
-  padding: 4px;
-  border: 1px solid #444;
-}
-
 /* line 84, ../../sass/style.scss */
 .work span.pdate, .article span.pdate {
   float: right;
