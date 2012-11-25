@@ -3,9 +3,21 @@
   each work in works.slice(0, 3)
     .work
       h4
-        a(href=work.name + '/')= work.title
+        a(href="work/" + work.name + '/')= work.title
         date = work.date
         span(title=strftime('%B %d, %Y %H:%M UTC', date), class="pdate")= strftime('%Y.%m.%d', date)
       | !{work.desc}
     hr(class='clear')
 a(id='morelink', href='works') older...
+
+
+hr(class='clear')
+
+.articles
+  h3 recent articles
+  each article in articles
+    .article
+      h4
+        a(href='article/' + article.name + '/')= article.title
+        date = article.date
+        !{article.desc}

@@ -1,11 +1,11 @@
 /* deps */
 
 var http = require('http')
-  , Stack = require('stack')
-  , Creationix = require('creationix')
   , port = parseInt(process.env.PANCAKE_IO_PORT, 10) || 3000
   , app = require('./app');
 
+  //, Stack = require('stack')
+  //, Creationix = require('creationix')
 // process title
 //
 

@@ -7,6 +7,7 @@ var ref = require('ref');
 var path = require('path');
 var git = require('./lib/git');
 var express = require('express');
+var params = require('express-params');
 var GitError = require('./lib/git-error');
 var debug = require('debug')('pancake');
 
@@ -15,7 +16,7 @@ var debug = require('debug')('pancake');
  */
 
 var app = module.exports = express();
-
+params.extend(app);
 /**
  * Running in "production" mode?
  *   - Don't serve from "fs", lookup HEAD instead and use that SHA (cache)
@@ -91,15 +92,28 @@ app.get('/articles', require('./lib/articles'));
 
 // redirect blog articles to have a trailing "/" (this is necessary because of
 // the way the browser serves files from relative URLs)
-app.get('*', require('./lib/article-redirect'));
+//app.get('*', require('./lib/article-redirect'));
+
+app.param('article', /^[0-9a-z-_]+$/);
+app.get('/article/:article', require('./lib/article'));
 
 // attempt to render an article if this a request for one
-app.get('*', require('./lib/article'));
+//app.get('*', require('./lib/article'));
 
 
 app.get('/works', require('./lib/works'));
-app.get('*', require('./lib/work-redirect'));
-app.get('*', require('./lib/work'));
+//app.get('*', require('./lib/work-redirect'));
+app.param('work', /^[0-9a-z-_]+$/);
+app.get('/work/:work', require('./lib/work'));
+//app.get('/work/:work', function(req,res,next){
+//  require('./lib/work')(req,res,next);
+//  //var work = req.params.work;
+//  //res.send('work '+work);
+//});
+//app.get('/test/:work', function(req, res, next){
+//  var work = req.params.work;
+//  res.send('work '+ work);
+//});
 
 // finally attempt to serve static files from the public/ dir
 app.get('*', require('./lib/static'));
