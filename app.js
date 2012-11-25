@@ -23,7 +23,7 @@ params.extend(app);
  */
 
 var prod = app.settings.prod = /^production$/i.test(app.settings.env);
-debug('running in %j mode (prod: %s)', app.settings.env, prod);
+console.log('running in %j mode (prod: %s)', app.settings.env, prod);
 
 
 /**
