@@ -105,15 +105,6 @@ app.get('/works', require('./lib/works'));
 //app.get('*', require('./lib/work-redirect'));
 app.param('work', /^[0-9a-z-_]+$/);
 app.get('/work/:work', require('./lib/work'));
-//app.get('/work/:work', function(req,res,next){
-//  require('./lib/work')(req,res,next);
-//  //var work = req.params.work;
-//  //res.send('work '+work);
-//});
-//app.get('/test/:work', function(req, res, next){
-//  var work = req.params.work;
-//  res.send('work '+ work);
-//});
 
 // finally attempt to serve static files from the public/ dir
 app.get('*', require('./lib/static'));
