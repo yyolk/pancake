@@ -8,7 +8,6 @@ var path = require('path');
 //var git = require('./lib/git');
 var express = require('express');
 var params = require('express-params');
-var GitError = require('./lib/git-error');
 //var GitError = require('./lib/git-error');
 var debug = require('debug')('pancake');
 
@@ -23,7 +22,7 @@ params.extend(app);
  *   - Don't serve from "fs", lookup HEAD instead and use that SHA (cache)
  */
 
-var prod = app.settings.prod = /^production$/i.test(app.settings.env);
+var prod = app.settings.prod;// = /^production$/i.test(app.settings.env);
 console.log('running in %j mode (prod: %s)', app.settings.env, prod);
 
 
@@ -43,7 +42,7 @@ console.log('running in %j mode (prod: %s)', app.settings.env, prod);
  * The repo to use.
  */
 
-var repo_path = app.settings.repo_path = __dirname;
+//var repo_path = app.settings.repo_path = __dirname;
 //var git_path = app.settings.git_path = repo_path + '/.git';
 
 /**
@@ -75,13 +74,13 @@ if (prod) {
  */
 
 // first we need to figure out which commit SHA we will use
-app.get(/^\/([0-9a-f]{5,40})\b/, require('./lib/sha'));
+//app.get(/^\/([0-9a-f]{5,40})\b/, require('./lib/sha'));
 
 // every request needs to resolve HEAD for the templates
-app.get('*', require('./lib/head'));
+//app.get('*', require('./lib/head'));
 
 // by now `req.sha` and `req.head_sha` are guaranteed to be set
-app.get('*', require('./lib/root-tree'));
+//app.get('*', require('./lib/root-tree'));
 
 // `req.article_names` is used by every request
 app.get('*', require('./lib/article-names'));
