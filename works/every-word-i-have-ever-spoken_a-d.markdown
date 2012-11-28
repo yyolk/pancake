@@ -5,5 +5,5 @@ Every Word I've Ever Spoken
 
 A » D
 
-- http://www.flickr.com/photos/yyolk/5015748011
-- http://www.flickr.com/photos/yyolk/5015747705
+![](http://farm5.staticflickr.com/4112/5015747705_dda871412e_o.jpg)
+![](http://farm5.staticflickr.com/4105/5015748011_cdbf86a5f0_o.jpg)
