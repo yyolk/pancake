@@ -106,6 +106,9 @@ app.get('/works', require('./lib/works'));
 app.param('work', /^[0-9a-z-_]+$/);
 app.get('/work/:work', require('./lib/work'));
 
-// finally attempt to serve static files from the public/ dir
+app.get('/work/:work/*', require('./lib/work-assets'));
+                       
+    // finally attempt to serve static files from the public/ dir
 app.get('*', require('./lib/static'));
+
 
