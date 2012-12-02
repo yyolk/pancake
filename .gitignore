@@ -16,3 +16,4 @@ node_modules
 npm-debug.log
 *.sw*
 .sass-cache
+.c9revisions
