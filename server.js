@@ -1,7 +1,7 @@
 /* deps */
 
 var http = require('http')
-  , port = parseInt(process.env.PANCAKE_IO_PORT, 10) || 3000
+  , port = parseInt(process.env.PANCAKE_IO_PORT, 10) || procc.env.PORT || 3000
   , app = require('./app');
 
   //, Stack = require('stack')
