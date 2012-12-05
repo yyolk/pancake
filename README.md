@@ -1,4 +1,4 @@
 pancake
 =======
 
-yolk.cc + wheat = pancake
+# [yolk.cc](http://yolk.cc) + node = pancake
