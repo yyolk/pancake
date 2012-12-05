@@ -1,5 +1,8 @@
-.article-title
-  h1= article.title
+.article
+  h1
+    a.backtohome(href='/')
+      span.backarrow ⤺
+      span.title!=article.title
   strong
     | Published: 
     date = article.date
