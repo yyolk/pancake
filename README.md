@@ -1,4 +1,4 @@
 pancake
 =======
 
-# [yolk.cc](http://yolk.cc) + node = pancake
+# [:egg:](http://yolk.cc) + node = :hamburger:
