@@ -76,17 +76,30 @@
 @import "compass/css3";
 
 body { padding: 40px; }
-.works, .articles{
-//  padding:4px;
-//  border: 1px solid #444;
-}
+
+
+
+@import "recipes/shadow/drop";
+@import "recipes/effect/corners-tucked";
+
+
+@import "animate";
+
 header { 
   .nav a{
     @include inline-block;
     margin-right:5px;
   }
 }
+
 .work, .article {
+  // &:hover{ 
+  //   @include drop-shadow-raised;
+
+  //   @include transition-duration(.4s);
+  //   @include animate-bounceIn;
+  //   //@include transition-timing-function(ease-in);
+  // }
   span.pdate { float:right;}
   a {
     @include inline-block;
@@ -103,6 +116,12 @@ header {
       background-color: red;
       color:white;
       text-decoration:none;
+      &{
+            @include drop-shadow-raised;
+
+    @include transition-duration(.4s);
+    @include animate-bounceIn;
+      }
     }
   }
   a.backhome{
