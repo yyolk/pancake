@@ -5,7 +5,7 @@ Secret-Santa-Style GIF Exchange
 
 by [Anthony Antonellis](http://anthonyantonellis.com)
 
-![](http://farm9.staticflickr.com/8499/8338328737_34b0e7b50c_o.gif)
+![](gif-unwrapping/thumbnail.gif)
 
 ![](http://i.imgur.com/T6yBW.gif)
 
