@@ -92,6 +92,14 @@ header {
   }
 }
 
+@import url("http://weloveiconfonts.com/api/?family=entypo");
+
+/* entypo */
+[class*="entypo-"]:before {
+  font-family: 'entypo', sans-serif;
+}
+
+
 .work, .article {
   // &:hover{ 
   //   @include drop-shadow-raised;
