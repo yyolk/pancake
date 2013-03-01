@@ -8,7 +8,7 @@ var path = require('path');
 var express = require('express');
 var params = require('express-params');
 var debug = require('debug')('pancake');
-s
+
 /**
  * The app.
  */
