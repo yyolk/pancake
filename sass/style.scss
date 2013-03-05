@@ -99,7 +99,29 @@ header {
   font-family: 'entypo', sans-serif;
 }
 
+a {
+  @include inline-block;
+  text-decoration:none;
+  padding:4px;
+  &:visited{
+    color:blue;
+  }
+  &:hover{
+    &:active{
+      color:red;
+      background-color:white;
+    }
+    background-color: red;
+    color:white;
+    text-decoration:none;
+    &{
+          @include drop-shadow-raised;
 
+  @include transition-duration(.4s);
+  @include animate-bounceIn;
+    }
+  }
+}
 .work, .article {
   // &:hover{ 
   //   @include drop-shadow-raised;
@@ -109,29 +131,7 @@ header {
   //   //@include transition-timing-function(ease-in);
   // }
   span.pdate { float:right;}
-  a {
-    @include inline-block;
-    text-decoration:none;
-    padding:4px;
-    &:visited{
-      color:blue;
-    }
-    &:hover{
-      &:active{
-        color:red;
-        background-color:white;
-      }
-      background-color: red;
-      color:white;
-      text-decoration:none;
-      &{
-            @include drop-shadow-raised;
 
-    @include transition-duration(.4s);
-    @include animate-bounceIn;
-      }
-    }
-  }
   a.backhome{
     margin-left:-32px;
     span.backarrow{

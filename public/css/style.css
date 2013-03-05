@@ -599,12 +599,8 @@ header .nav a {
   font-family: "entypo", sans-serif;
 }
 
-/* line 111, ../../sass/style.scss */
-.work span.pdate, .article span.pdate {
-  float: right;
-}
-/* line 112, ../../sass/style.scss */
-.work a, .article a {
+/* line 102, ../../sass/style.scss */
+a {
   display: -moz-inline-stack;
   display: inline-block;
   vertical-align: middle;
@@ -614,23 +610,23 @@ header .nav a {
   text-decoration: none;
   padding: 4px;
 }
-/* line 116, ../../sass/style.scss */
-.work a:visited, .article a:visited {
+/* line 106, ../../sass/style.scss */
+a:visited {
   color: blue;
 }
-/* line 119, ../../sass/style.scss */
-.work a:hover, .article a:hover {
+/* line 109, ../../sass/style.scss */
+a:hover {
   background-color: red;
   color: white;
   text-decoration: none;
 }
-/* line 120, ../../sass/style.scss */
-.work a:hover:active, .article a:hover:active {
+/* line 110, ../../sass/style.scss */
+a:hover:active {
   color: red;
   background-color: white;
 }
-/* line 127, ../../sass/style.scss */
-.work a:hover, .article a:hover {
+/* line 117, ../../sass/style.scss */
+a:hover {
   -webkit-box-shadow: 0 15px 10px -10px rgba(0, 0, 0, 0.5), 0 1px 4px rgba(0, 0, 0, 0.3);
   -moz-box-shadow: 0 15px 10px -10px rgba(0, 0, 0, 0.5), 0 1px 4px rgba(0, 0, 0, 0.3);
   box-shadow: 0 15px 10px -10px rgba(0, 0, 0, 0.5), 0 1px 4px rgba(0, 0, 0, 0.3);
@@ -746,6 +742,10 @@ header .nav a {
     }
 }
 
+}
+/* line 133, ../../sass/style.scss */
+.work span.pdate, .article span.pdate {
+  float: right;
 }
 /* line 135, ../../sass/style.scss */
 .work a.backhome, .article a.backhome {
