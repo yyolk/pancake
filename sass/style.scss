@@ -80,8 +80,7 @@ body { padding: 40px; }
 
 
 @import "recipes/shadow/drop";
-@import "recipes/effect/corners-tucked";
-
+@import "recipes/effect/cutout";
 
 @import "animate";
 
@@ -115,21 +114,45 @@ a {
     color:white;
     text-decoration:none;
     &{
-          @include drop-shadow-raised;
-
-  @include transition-duration(.4s);
-  @include animate-bounceIn;
+      @include drop-shadow-raised;
+      @include transition-duration(.4s);
+      @include animate-bounceIn;
     }
   }
 }
+a.worklink, a.articlelink, a.morelink{
+  &:hover{
+    @include cutout;
+    @include transition-duration(.4s);
+    @include animate-bounceIn;
+  }
+}
+
+a.morelink{
+
+  &:hover{
+    color:white;
+    &:visited{
+      color:white;
+    }
+    background-color:blue;
+    &:active{
+      background-color:white;
+      color:blue;
+    }
+  }
+}
+
 .work, .article {
-  // &:hover{ 
+  &:hover{ 
+
   //   @include drop-shadow-raised;
 
   //   @include transition-duration(.4s);
   //   @include animate-bounceIn;
   //   //@include transition-timing-function(ease-in);
-  // }
+  }
+
   span.pdate { float:right;}
 
   a.backhome{

@@ -1,15 +1,9 @@
-.links
-  a(href="http://≈.yolk.cc") ≈
-  a(href="http://mythoughtsareyours.yolk.cc") mythoughtsareyours
-  a(href="http://yolkalyzer.yolk.cc") yolkalyzer
-  a(href="http://www.0p3nr3p0.net") 0p3nr3p0
-  a(href="http://samedifference.io") samedifference
 .works
   h3 recent works 
   each work in works.slice(0, 3)
     .work
       h4
-        a(href="work/" + work.name + '/')= work.title
+        a(class='worklink', href="work/" + work.name + '/')= work.title
         date = work.date
         span(title=strftime('%B %d, %Y %H:%M UTC', date), class="pdate")= strftime('%Y.%m.%d', date)
       | !{work.desc}
@@ -21,7 +15,7 @@ a(class='morelink', href='works') older...
   each article in articles.slice(0, 3)
     .article
       h4
-        a(href='article/' + article.name + '/')= article.title
+        a(class='articlelink', href='article/' + article.name + '/')= article.title
         date = article.date
         span(title=strftime('%B %d, %Y %H:%M UTC', date), class='pdate')
           =strftime('%Y.%m.%d',date)
