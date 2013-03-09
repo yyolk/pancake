@@ -130,9 +130,6 @@ a.worklink, a.articlelink, a.morelink{
 
 a.yolk{
   &:hover{
-    @include cutout;
-    @include transition-duration(.4s);
-    @include animate-bounceIn;
     background-color: black;
     color:white;
     &:active{
