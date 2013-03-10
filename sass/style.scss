@@ -204,12 +204,17 @@ a.morelink {
 @include keyframes(upcomingHue) {
   0%, 100% {
     color: LemonChiffon;
+    background-color: Crimson;
   }
   50% {
     color: Crimson;
+    background-color: LemonChiffon;
   }
 }
 
 .upcoming h3{
   @include animation(upcomingHue 3s infinite);
+  @include drop-shadow-raised;
+  @include inline-block;
+  padding: 10px;
 }
