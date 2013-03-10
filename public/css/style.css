@@ -1006,12 +1006,16 @@ a.morelink:visited {
   0%, 100% {
     color: LemonChiffon;
     background-color: Crimson;
+    -moz-box-shadow: 0 15px 10px -10px rgba(0, 0, 0, 0.5), 0 1px 4px rgba(0, 0, 0, 0.3);
+    box-shadow: 0 15px 10px -10px rgba(0, 0, 0, 0.5), 0 1px 4px rgba(0, 0, 0, 0.3);
   }
 
-  /* line 209, ../../sass/style.scss */
+  /* line 210, ../../sass/style.scss */
   50% {
     color: Crimson;
     background-color: LemonChiffon;
+    -moz-box-shadow: 0 1px 0 rgba(255, 255, 255, 0.2), inset 0 5px 5px rgba(0, 0, 0, 0.6), inset 0 1px 5px rgba(0, 0, 0, 0.6);
+    box-shadow: 0 1px 0 rgba(255, 255, 255, 0.2), inset 0 5px 5px rgba(0, 0, 0, 0.6), inset 0 1px 5px rgba(0, 0, 0, 0.6);
   }
 }
 
@@ -1020,12 +1024,16 @@ a.morelink:visited {
   0%, 100% {
     color: LemonChiffon;
     background-color: Crimson;
+    -webkit-box-shadow: 0 15px 10px -10px rgba(0, 0, 0, 0.5), 0 1px 4px rgba(0, 0, 0, 0.3);
+    box-shadow: 0 15px 10px -10px rgba(0, 0, 0, 0.5), 0 1px 4px rgba(0, 0, 0, 0.3);
   }
 
-  /* line 209, ../../sass/style.scss */
+  /* line 210, ../../sass/style.scss */
   50% {
     color: Crimson;
     background-color: LemonChiffon;
+    -webkit-box-shadow: 0 1px 0 rgba(255, 255, 255, 0.2), inset 0 5px 5px rgba(0, 0, 0, 0.6), inset 0 1px 5px rgba(0, 0, 0, 0.6);
+    box-shadow: 0 1px 0 rgba(255, 255, 255, 0.2), inset 0 5px 5px rgba(0, 0, 0, 0.6), inset 0 1px 5px rgba(0, 0, 0, 0.6);
   }
 }
 
@@ -1034,12 +1042,14 @@ a.morelink:visited {
   0%, 100% {
     color: LemonChiffon;
     background-color: Crimson;
+    box-shadow: 0 15px 10px -10px rgba(0, 0, 0, 0.5), 0 1px 4px rgba(0, 0, 0, 0.3);
   }
 
-  /* line 209, ../../sass/style.scss */
+  /* line 210, ../../sass/style.scss */
   50% {
     color: Crimson;
     background-color: LemonChiffon;
+    box-shadow: 0 1px 0 rgba(255, 255, 255, 0.2), inset 0 5px 5px rgba(0, 0, 0, 0.6), inset 0 1px 5px rgba(0, 0, 0, 0.6);
   }
 }
 
@@ -1048,12 +1058,14 @@ a.morelink:visited {
   0%, 100% {
     color: LemonChiffon;
     background-color: Crimson;
+    box-shadow: 0 15px 10px -10px rgba(0, 0, 0, 0.5), 0 1px 4px rgba(0, 0, 0, 0.3);
   }
 
-  /* line 209, ../../sass/style.scss */
+  /* line 210, ../../sass/style.scss */
   50% {
     color: Crimson;
     background-color: LemonChiffon;
+    box-shadow: 0 1px 0 rgba(255, 255, 255, 0.2), inset 0 5px 5px rgba(0, 0, 0, 0.6), inset 0 1px 5px rgba(0, 0, 0, 0.6);
   }
 }
 
@@ -1062,25 +1074,24 @@ a.morelink:visited {
   0%, 100% {
     color: LemonChiffon;
     background-color: Crimson;
+    box-shadow: 0 15px 10px -10px rgba(0, 0, 0, 0.5), 0 1px 4px rgba(0, 0, 0, 0.3);
   }
 
-  /* line 209, ../../sass/style.scss */
+  /* line 210, ../../sass/style.scss */
   50% {
     color: Crimson;
     background-color: LemonChiffon;
+    box-shadow: 0 1px 0 rgba(255, 255, 255, 0.2), inset 0 5px 5px rgba(0, 0, 0, 0.6), inset 0 1px 5px rgba(0, 0, 0, 0.6);
   }
 }
 
-/* line 215, ../../sass/style.scss */
+/* line 217, ../../sass/style.scss */
 .upcoming h3 {
   -webkit-animation: upcomingHue 3s infinite;
   -moz-animation: upcomingHue 3s infinite;
   -ms-animation: upcomingHue 3s infinite;
   -o-animation: upcomingHue 3s infinite;
   animation: upcomingHue 3s infinite;
-  -webkit-box-shadow: 0 15px 10px -10px rgba(0, 0, 0, 0.5), 0 1px 4px rgba(0, 0, 0, 0.3);
-  -moz-box-shadow: 0 15px 10px -10px rgba(0, 0, 0, 0.5), 0 1px 4px rgba(0, 0, 0, 0.3);
-  box-shadow: 0 15px 10px -10px rgba(0, 0, 0, 0.5), 0 1px 4px rgba(0, 0, 0, 0.3);
   display: -moz-inline-stack;
   display: inline-block;
   vertical-align: middle;

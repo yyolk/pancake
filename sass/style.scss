@@ -205,16 +205,17 @@ a.morelink {
   0%, 100% {
     color: LemonChiffon;
     background-color: Crimson;
+    @include drop-shadow-raised;
   }
   50% {
     color: Crimson;
     background-color: LemonChiffon;
+    @include cutout;
   }
 }
 
 .upcoming h3{
   @include animation(upcomingHue 3s infinite);
-  @include drop-shadow-raised;
   @include inline-block;
   padding: 10px;
 }
