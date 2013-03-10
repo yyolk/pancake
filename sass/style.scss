@@ -83,6 +83,7 @@ body { padding: 40px; }
 @import "recipes/effect/cutout";
 
 @import "animate";
+@import "animation";
 
 header { 
   .nav a{
@@ -195,4 +196,20 @@ a.morelink {
     color: #0000cc;
   }
   clear:both;
+}
+
+
+// upcoming 
+
+@include keyframes(upcomingHue) {
+  0%, 100% {
+    color: LemonChiffon;
+  }
+  50% {
+    color: Crimson;
+  }
+}
+
+.upcoming h3{
+  @include animation(upcomingHue 3s infinite);
 }

@@ -2,6 +2,7 @@
 # Require any additional compass plugins here.
 require "compass-recipes"
 require "animate"
+require "animation"
 # Set this to the root of your project when deployed:
 http_path = "/"
 css_dir = "/public/css"
