@@ -3,7 +3,6 @@
  * Module dependencies.
  */
 
-var ref = require('ref');
 var path = require('path');
 var express = require('express');
 var params = require('express-params');

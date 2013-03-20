@@ -24,16 +24,11 @@
   "dependencies": {
     "debug": "*",
     "express": "3",
-    "express-params": "*",
-    "ffi": "1",
+    "express-params": "0",
     "gravatar": "1",
     "highlight.js": "7",
     "jade": "0",
-    "lru-cache": "~2.1.0",
     "marked": "0",
-    "ref": "0",
-    "ref-struct": "0",
-    "ref-array": "0",
     "strftime": "0",
     "mime": "~1.2.7"
   },
