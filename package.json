@@ -22,9 +22,9 @@
     "start": "node server.js"
   },
   "dependencies": {
-    "debug": "*",
-    "express": "3",
-    "express-params": "0",
+    "debug": "0.7.2",
+    "express": "3.1.0",
+    "express-params": "0.0.3",
     "gravatar": "1",
     "highlight.js": "7",
     "jade": "0",
