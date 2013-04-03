@@ -1,4 +1,4 @@
-Title: YOLK @ |\|() |\|∆†|()|\| (Prime Real Estate)
+Title: YOLK @ M.T. Chicago
 Date: Tue, 20 March 2012 19:36:59 GMT
 
 YOLK @ M.T. Chicago
