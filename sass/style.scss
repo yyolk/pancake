@@ -74,7 +74,12 @@
 @import "h5bp/h5bp-css-print-after.inc";
 // ==|== End print-media ====================================================
 @import "compass/css3";
+@import url(http://weloveiconfonts.com/api/?family=fontawesome);
 
+/* fontawesome */
+[class*="fontawesome-"]:before {
+  font-family: 'FontAwesome', sans-serif;
+}
 body { padding: 40px; }
 
 
@@ -92,13 +97,12 @@ header {
   }
 }
 
-@import url("http://weloveiconfonts.com/api/?family=entypo");
+@import url(http://weloveiconfonts.com/api/?family=fontawesome);
 
-/* entypo */
-[class*="entypo-"]:before {
-  font-family: 'entypo', sans-serif;
+/* fontawesome */
+[class*="fontawesome-"]:before {
+  font-family: 'FontAwesome', sans-serif;
 }
-
 a {
   @include inline-block;
   text-decoration:none;
