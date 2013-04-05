@@ -5,7 +5,9 @@ YOLK : Fundamentals
 
 - [go to fundamentals](http://fundamentals.yolk.cc)
 
-<iframe src="fundamentals/banner.html" height="500px"></iframe>
+<iframe src="fundamentals/banner.html" height="500"></iframe>
+
+<iframe src="http://fundamentals.yolk.cc" height="1000"></iframe>
 
 Created for my _Fundamentals of Art and Technology_ class at The School of the
 Art Institute of Chicago.
