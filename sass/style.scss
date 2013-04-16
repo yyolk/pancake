@@ -98,10 +98,28 @@ header {
 }
 
 @import url(http://weloveiconfonts.com/api/?family=fontawesome);
+@import url(http://weloveiconfonts.com/api/?family=zocial);
 
 /* fontawesome */
 [class*="fontawesome-"]:before {
   font-family: 'FontAwesome', sans-serif;
+}
+
+/* zocial */
+[class*="zocial-"]:before {
+  font-family: 'zocial', sans-serif;
+}
+
+
+.social{
+  margin-left:-5px;
+}
+.social a{
+  margin:5px;
+  font-size:200%;
+}
+.social:first-child{
+  margin-left:-5px;
 }
 a {
   @include inline-block;
@@ -134,7 +152,13 @@ a.worklink, a.articlelink, a.morelink{
   }
 }
 
-a.yolk{
+.yolk {
+  margin-left:-10px;
+}
+.yolk a{
+  margin:10px;
+  padding:20px;
+  color:black;
   &:hover{
     background-color: black;
     color:white;
