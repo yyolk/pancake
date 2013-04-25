@@ -1,9 +1,9 @@
 Title: YOLKALYZER
 Date: Tue, 29 May 2012 04:56:34 GMT
 
-A collada DAE ***"glitcher" / "texturizer"***
+A Collada DAE ***"glitcher" / "texturizer"***. 
 
-Inspired by [Satromizer](http://jonsatrom.com/satromizer/) and can be considered as such: 
+Inspired by [Satromizer](http://satromizer.com/) and can be considered as such: 
 
 > **BITMAP** => **Satromizer** :: **3D** => **YOLKALYZER**
 
@@ -11,7 +11,7 @@ Inspired by [Satromizer](http://jonsatrom.com/satromizer/) and can be considered
 
 turns into 
 
-![](http://farm6.staticflickr.com/5470/7194214902_0dc2497af6_o.png)
+![](http://farm9.staticflickr.com/8159/7174927072_a97dd787cf_o.png)
 
 ###USAGE:
 
@@ -19,22 +19,25 @@ turns into
 
 1. Open the `Terminal.app` and enter the following commands.
 
-2. Clone the repo
+2. Either:
+  - Clone the repo
     ```git clone git://github.com/yyolk/yolkalyzer.git```
-
-3. Install [Bundler](http://gembundler.com/)
-    * System Ruby (Leopard, Snow Leopard, Lion etc…)
-		* ```sudo gem install bundler```
-		* Confirm with password.
-    * with [`rbenv`](https://github.com/sstephenson/rbenv):
-    	* ```rbenv exec gem install bundler```
+  - Or Download a [tarball](https://github.com/yyolk/yolkalyzer/tarball/master) or [zip](https://github.com/yyolk/yolkalyzer/zipball/master).
 
 
-4. Change into the directory and install dependencies with [bundle](http://gembundler.com/).
+3. Change into the directory.
     ```
 cd yolkalyzer
-bundle install
     ```
+
+4. Run the script.
+    ```ruby yolkalyzer.rb mesh/model.dae mesh/fuckedupmodel.dae```
+
+_or [download the <span class="fontawesome-bolt"></span> undocumented <span class="fontawesome-bolt"></span> droplet](https://github.com/yyolk/yolkalyzer/archive/droplet.zip)._
+
+## <a href="http://yolkalyzer.yolk.cc/" class="fontawesome-external-link">online demos</a>
+
+## <a href="https://github.com/yyolk/yolkalyzer" class="zocial-github" alt="github repo" title="github repo"></a>
 
 ### flickr:
 ![](http://farm8.staticflickr.com/7075/7253942976_65e1f6a323_o.png)
