@@ -1142,3 +1142,9 @@ a.morelink:visited {
   *display: inline;
   padding: 10px;
 }
+
+/* line 252, ../../sass/style.scss */
+footer {
+  margin-top: 20px;
+  text-align: center;
+}
