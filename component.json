@@ -1,0 +1,12 @@
+{
+  "name": "pancake",
+  "repo": "yyolk/pancake",
+  "description": "pancake components",
+  "version": "0.0.1",
+  "keywords": [],
+  "dependencies": {
+    "component/favicon":"*"
+    },
+  "development": {},
+  "license": "MIT"
+}
