@@ -49,6 +49,22 @@ body
     window.jQuery || document.write('<script src="/js/vendor/jquery-1.8.2.min.js"><\/script>')
 
   script(src="build.js")
+  script
+    var icon = require('favicon');
+    var canvas = document.createElement('canvas');
+    canvas.width = canvas.height = 16;
+    var ctx = canvas.getContext('2d');
+    ctx.font = '16px Helvetica, Arial, sans-serif';
+
+    var nums = [0,1,2,3,4,5,6,7,8,9];
+    var i = 0;
+
+    setInterval(function(){
+      ctx.clearRect(0, 0, 16, 16);
+      var n = nums[i++ % 10];
+      ctx.fillText(n, 0, 15);
+      icon(canvas.toDataURL());
+    }, 300);
   //-script(src="//ajax.googleapis.com/ajax/libs/mootools/1.4.5/mootools-yui-compressed.js")
 //-  script
 //-  document.id || document.write('<script src=\"js/libs/mootools-core-1.4.5-full-nocompat-yc.js\"><\\/script>')
