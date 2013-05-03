@@ -297,4 +297,5 @@ function head() {
 
 });
 require.alias("component-favicon/index.js", "pancake/deps/favicon/index.js");
+require.alias("component-favicon/index.js", "favicon/index.js");
 
