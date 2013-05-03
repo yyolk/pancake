@@ -980,16 +980,16 @@ a.morelink:hover:visited {
 /* line 177, ../../sass/style.scss */
 a.morelink:hover:active {
   background-color: white;
-  color: blue;
 }
 
-/* line 194, ../../sass/style.scss */
+/* line 193, ../../sass/style.scss */
 .work span.pdate, .article span.pdate {
   float: right;
 }
-/* line 196, ../../sass/style.scss */
+/* line 195, ../../sass/style.scss */
 .work a.backhome, .article a.backhome {
   margin-left: -32px;
+  color: black;
 }
 /* line 198, ../../sass/style.scss */
 .work a.backhome span.backarrow, .article a.backhome span.backarrow {
@@ -1012,7 +1012,7 @@ a.morelink:hover:active {
 }
 /* line 210, ../../sass/style.scss */
 .work a.backhome:active span.title, .article a.backhome:active span.title {
-  color: red;
+  color: blue;
 }
 /* line 215, ../../sass/style.scss */
 .work p, .article p {

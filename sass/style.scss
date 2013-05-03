@@ -176,7 +176,6 @@ a.morelink{
     background-color:blue;
     &:active{
       background-color:white;
-      color:blue;
     }
   }
 }
@@ -195,6 +194,7 @@ a.morelink{
 
   a.backhome{
     margin-left:-32px;
+    color:black;
     span.backarrow{
       @include inline-block;
       position:relative;
@@ -208,7 +208,7 @@ a.morelink{
         color:black;
       }
       span.title{
-        color:red;
+        color:blue;
       }
     }
   }
