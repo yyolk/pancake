@@ -15,22 +15,20 @@
     "url": "git://github.com/yyolk/pancake.git"
   },
   "engines": {
-    "node": ">= 0.8.x",
+    "node": ">= 0.8.0",
     "npm": "1.1.x"
   },
   "scripts": {
     "start": "node server.js"
   },
   "dependencies": {
-    "debug": "0.7.2",
-    "express": "3.1.0",
+    "debug": "0",
+    "express": "3",
     "express-params": "0.0.3",
-    "gravatar": "1",
     "highlight.js": "7",
-    "jade": "0.28.2",
+    "jade": "0",
     "marked": "0",
     "strftime": "0",
     "mime": "~1.2.7"
-  },
-  "devDependencies": {}
+  }
 }
