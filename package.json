@@ -3,7 +3,7 @@
   "author": "Joseph YOLK Chiocchi <joe@yolk.cc> (http://yolk.cc)",
   "name": "pancake",
   "description": "Git repo for pancake",
-  "version": "0.0.0-141",
+  "version": "0.0.0-142",
   "homepage": "http://yolk.cc",
   "subdomain": "pancake",
   "domains": [
@@ -26,6 +26,7 @@
     "express": "3",
     "express-params": "0.0.3",
     "highlight.js": "7",
+    "gravatar": "1",
     "jade": "0",
     "marked": "0",
     "strftime": "0",
