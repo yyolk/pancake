@@ -1,18 +1,18 @@
 {
   "private": true,
   "author": "Joseph YOLK Chiocchi <joe@yolk.cc> (http://yolk.cc)",
-  "name": "omelette",
-  "description": "Git repo for omelette",
-  "version": "0.0.1",
+  "name": "pancake",
+  "description": "Git repo for pancake",
+  "version": "0.0.0-141",
   "homepage": "http://yolk.cc",
-  "subdomain": "omelette",
+  "subdomain": "pancake",
   "domains": [
     "yolk.cc",
     "www.yolk.cc"
   ],
   "repository": {
     "type": "git",
-    "url": "git://github.com/yyolk/omelette.git"
+    "url": "git://github.com/yyolk/pancake.git"
   },
   "engines": {
     "node": ">= 0.8.0",
